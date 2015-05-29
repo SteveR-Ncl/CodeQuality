@@ -43,8 +43,7 @@ public class RunSearch {
 		int[] p = myArr.mergeSort(m, n);
 		
 		System.out.println("Merged array is " + Arrays.toString(p));
-		
-		System.out.println("and the square root of 42 is " + myArr.sqrt(42));
+
 	}
 
 }

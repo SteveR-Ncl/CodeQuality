@@ -2,14 +2,12 @@
 package examples;
 
 /**
- * nullness example
+ * nullness example, adapted from http://types.cs.washington.edu/checker-framework/tutorial/webpages/get-started-eclipse.html
  *
  */
 public class NullExample {
 
-	/**
-	 * just the main method
-	 */
+
 	public static void main(String[] args) {
 		  Object myObject = null;
 	        // To see a built-in Eclipse warning, remove this "if"
