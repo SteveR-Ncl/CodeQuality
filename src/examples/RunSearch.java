@@ -29,7 +29,7 @@ public class RunSearch {
 		System.out.print("What word to look for? -> ");
 		 
 		String target = br.readLine();
-		
+		// resource leak! found with infer
 		
 		System.out.println("Found " + target + " with contains: " + myArr.arrayContains(target));
 		System.out.println("Found " + target + " with for loop: " + myArr.forLoopSearch(target));

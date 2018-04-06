@@ -12,12 +12,11 @@ import java.util.List;
  * Carlo Ghezzi, Mehdi Jazayeri, and Dino Mandrioli: Fundamentals of
  * Software Engineering, 2nd edition
  * 
- * Use with PMD to illustrate several examples of static analysis
  */
 
 public class ArraySearch {
 	private List<String> words;
-	
+
 	/**
 	 * Search using arrayList.
 	 * @param findme string to search for
@@ -27,22 +26,22 @@ public class ArraySearch {
 		boolean foundIt = words.contains(findme);
 		return foundIt;
 	}
-	
+
 	/**
-	 * Search using foreach loop
+	 * Search using foreach loop.
 	 * @param findme string to search for
 	 * @return true if found
 	 */
-	public boolean forLoopSearch(String findme){
+	public boolean forLoopSearch(String findme) {
 		boolean foundIt = false;
 		for(String w: words){
-            if(w.equals(findme)){
-               foundIt = true;
-            }
-        }
+			if(w.equals(findme)){
+				foundIt = true;
+			}
+		}
 		return foundIt;
 	}
-	
+
 	public String getLongest(){
 		String longest = "";
 		Iterator<String> iter = words.iterator();
@@ -53,18 +52,18 @@ public class ArraySearch {
 			}
 		}
 		return longest;
-		
+
 	}
-	
+
 	/**
 	 * Accessor. 
 	 * @return the current word list.
 	 */
 	public List<String> getWords() {
-	 
-		return words;	
+
+		return words;    
 	}
-	
+
 	/**
 	 * Setter for words
 	 * @param newWords List of new words
@@ -72,21 +71,21 @@ public class ArraySearch {
 	public void setWords(List<String> newWords){
 		words = newWords;
 	}
-	
-	
-	
-	public int[] mergeSort(int[] a, int[] b){
-	// assumption that a and b are same length and sorted
-		int	i=0, j=0, k=0;
+
+
+
+	public int[] mergeSort(int[] a, int[] b) {
+		// assumption that a and b are same length and sorted
+		int i = 0, j = 0, k = 0;
 		int n = a.length;
-		int c[] = new int[2*n] ;
-	
-		while (k < 2*n) {
-		
+		int[] c = new int[2 * n];
+
+		while (k < 2 * n) {
+
 			if (i < n && j < n && a[i] < b[j] || i<n && j == n){
 				c[k] = a[i]; 
 				i++;
-			}
+			} 
 			else if(j < n){
 				c[k] = b[j];
 				j++;
@@ -96,6 +95,6 @@ public class ArraySearch {
 		return c;
 
 	}
-	
+
 
 }
