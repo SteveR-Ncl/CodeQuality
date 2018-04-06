@@ -1,3 +1,6 @@
 # CodeQuality
-Code quality and patterns
-Some snippets of code to illustrate code quality issues, and examples of applied design patterns
+Code quality 
+
+Some snippets of code to illustrate code quality issues and static analysis.
+
+Use with a static analyser such as PMD.
