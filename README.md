@@ -1,6 +1,3 @@
-# CodeQuality
-Code quality 
+# CodeQuality - moved to Gitlab
 
-Some snippets of code to illustrate code quality issues and static analysis.
-
-Use with a static analyser such as PMD.
+These files now available (internally to Newcastle) at https://gitlab.ncl.ac.uk/nsr8/code-quality-samples
